@@ -1,0 +1,500 @@
+:root {
+  --hover: #ffba45;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-container .logo {
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  color: #f2d39d;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  margin-left: 150px;
+}
+
+.navbar-container {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+header.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  z-index: 9999;
+  color: white;
+}
+
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 4rem;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li a:hover {
+  color: #f2d39d;
+}
+.content {
+  display: flex;
+  width: 100%;
+  height: 840px;
+  background-color: #191d28;
+}
+
+.konten-deskripsi {
+  width: 45%;
+  padding-top: 15%;
+  padding-left: 150px;
+  color: white;
+}
+.konten-deskripsi h5 {
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  padding-left: 12px;
+  color: ;
+}
+
+.hello {
+  display: flex;
+  color: #f2d39d;
+  margin-bottom: -2rem;
+}
+.line {
+  width: 32px;
+  height: 1px;
+  background-color: #f2d39d;
+  margin-top: 40px;
+}
+
+.konten-deskripsi h1 {
+  font-size: 54px;
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 14px;
+}
+
+.konten-deskripsi p {
+  margin-top: -1rem;
+}
+.konten-deskripsi {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.putra {
+  color: #f2d39d;
+}
+
+.konten-gambar {
+  position: absolute;
+  margin-top: 131px;
+  right: 4rem;
+}
+
+main .content .konten-deskripsi .btn-unduh {
+  padding-top: 4rem;
+}
+
+main .content .konten-deskripsi .tombol-unduh {
+  font-family: "Poppins";
+  font-weight: 600;
+  padding: 8px 22px;
+  background-color: #f2d39d;
+  color: black;
+}
+main .content .konten-deskripsi .tombol-unduh:hover {
+  background-color: var(--hover);
+}
+
+main .scroll {
+  right: 50px;
+  position: absolute;
+  margin-top: 6rem;
+}
+
+main .scroll h2 {
+  font-weight: 600;
+  font-size: 1rem;
+  writing-mode: vertical-rl;
+  transition: rotate(180deg);
+  color: #f2d39d;
+}
+
+main .scroll .icon-scroll {
+  margin-left: 15px;
+}
+
+.icon-scroll {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+}
+
+/* about-me */
+
+.about-me .about-gambar {
+  padding-left: 10%;
+}
+
+.about-me {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-color: #161922;
+  z-index: 5;
+  margin-top: -14px;
+}
+.about-me .isi-about {
+  padding-top: 8%;
+  padding-left: 1rem;
+  width: 40%;
+  color: white;
+}
+
+.about-me .judul-about {
+  display: flex;
+  margin-top: -3rem;
+}
+
+.about-me .isi-about .line-2 {
+  width: 36px;
+  height: 2px;
+  background-color: #f2d39d;
+  margin-top: 72px;
+}
+
+.about-me .isi-about h5 {
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #f2d39d;
+  padding-left: 1rem;
+}
+
+.about-me .isi-about p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: -1rem;
+  padding-bottom: 2rem;
+}
+
+.signature {
+  position: absolute;
+  padding-top: -3rem;
+}
+
+.about-me .isi-about .here-me {
+  position: absolute;
+  font-family: "Poppins";
+  font-weight: 600;
+  padding: 8px 22px;
+  background-color: #f2d39d;
+  color: black;
+  margin-top: 5rem;
+}
+
+.about-me .isi-about .here-me:hover {
+  background-color: var(--hover);
+}
+.about-me .isi-about .panah {
+  padding: 8px 22px;
+  background-color: #f2d39d;
+  margin-left: 8rem;
+  margin-top: 5rem;
+  position: absolute;
+}
+.about-me .isi-about .panah:hover {
+  background-color: var(--hover);
+}
+
+/* resume */
+
+main .resume {
+  width: 100%;
+  height: 1200px;
+  background-color: #191d28;
+  margin-top: -24px;
+}
+main .resume .top-resume {
+  display: flex;
+  justify-content: center;
+}
+
+main .resume .judul-resume {
+  width: 800px;
+  height: 240px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+main .resume .judul-resume h2 {
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #f2d39d;
+  padding-top: 4rem;
+}
+main .resume .judul-resume p {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  color: white;
+  margin-top: -1rem;
+}
+
+main .resume .card-resume .education {
+  color: white;
+}
+main .resume .card-resume .experience {
+  color: white;
+}
+main .resume .card-resume .education .sub-1 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+main .resume .card-resume .experience .sub-2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+main .resume .card-resume {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.resume .card-resume .col-1-resume .row-1,
+.row-2,
+.row-3 {
+  border: 1px solid black;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 22px;
+  width: 400px;
+  background-color: #161922;
+  margin-bottom: 2rem;
+  width: 400px;
+  background-color: #161922;
+  color: #cbd5e1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.resume .card-resume .col-2-resume .row-1-2,
+.row-2-2,
+.row-3-2 {
+  border: 1px solid black;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 22px;
+  width: 400px;
+  background-color: #161922;
+  margin-bottom: 2rem;
+  color: #cbd5e1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+.resume .card-resume .col-1-resume .row-1:hover,
+.row-2:hover,
+.row-3:hover {
+  background-color: #1b212f;
+}
+
+.resume .card-resume .col-2-resume .row-1-2:hover,
+.row-2-2:hover,
+.row-3-2:hover {
+  background-color: #1b212f;
+}
+
+.resume .card-resume .col-1-resume h3,
+h3 {
+  color: #f2d39d;
+}
+
+.resume .card-resume .col-1-resume p,
+p {
+  font-family: "Poppins";
+  font-size: 14px;
+}
+
+/* contact */
+main .contact {
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding-top: 12rem;
+  display: flex;
+  width: 100%;
+  height: 800px;
+  justify-content: center;
+  /* background-color: #161922; */
+  background: linear-gradient(to bottom, #161922 50%, #191d28 50%);
+}
+main .contact .contact-kiri {
+  width: 30%;
+}
+
+main .contact .contact-kiri .data-diri {
+  color: #f2d39d;
+  margin-top: 6rem;
+}
+.contact .contact-kiri .data-diri .teks {
+  width: 60%;
+}
+.contact .contact-kiri .data-diri .teks .nomer,
+.email,
+.alamat {
+  margin-top: -22px;
+  display: flex;
+}
+.contact .contact-kiri .data-diri .teks h5 {
+  padding-left: 14px;
+  font-size: 12px;
+}
+
+.contact .contact-kiri .data-diri .teks .line-aside {
+  width: 16px;
+  height: 0.5px;
+  background-color: #f2d39d;
+  margin-top: 30px;
+}
+
+.contact .contact-kiri .data-diri .sosmed {
+  display: flex;
+  gap: 1rem;
+}
+
+main .contact .sapa {
+  font-family: "Poppins";
+  font-weight: 600;
+  color: white;
+}
+.contact .sapa .sayHello {
+  color: #f2d39d;
+}
+main .contact .card-form {
+  width: 28rem;
+  height: 32rem;
+  margin-top: -4rem;
+  background-color: #1b212f;
+  padding: 1rem;
+  box-shadow: 0 2px 22px rgba(0, 0, 0, 0.6);
+}
+
+.card-form input[type="text"] {
+  width: 300px;
+  height: 40px;
+  font-size: 16px;
+}
+.contact form .card-form .intp {
+  margin: 3rem 3rem;
+}
+
+.contact form .card-form input {
+  color: white;
+  margin-bottom: 2rem;
+  background: none;
+  position: relative;
+  border: none;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+.contact form .card-form input:focus {
+  outline: none;
+  border-bottom: 1px solid #f2d39d;
+  color: #f2d39d;
+}
+.contact form .card-form input:focus::placeholder {
+  color: #f2d39d;
+}
+
+.contact form .card-form .intp .btn-contact {
+  margin-left: 200px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 22px;
+  background-color: #f2d39d;
+  color: black;
+  border: none;
+  outline: none;
+}
+
+.contact form .card-form .intp .btn-contact:hover {
+  background-color: var(--hover);
+}
+
+/* footer */
+.footer {
+  padding-top: 14px;
+  margin-top: -2rem;
+  width: 100%;
+  height: 100px;
+  background-color: #161922;
+  color: #cbd5e1;
+  text-align: center;
+}
+.footer a {
+  color: #cbd5e1;
+}
